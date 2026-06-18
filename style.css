@@ -1,51 +1,131 @@
-* {
-  margin: 0%;
-  padding: 0%;
+*{
+
+  margin:0%;
+
+  padding:0%;
+
   box-sizing: border-box;
+
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  background-color: #111; /* Added dark background to make the cards pop */
+
+
+html,body{
+
+  height:100%;
+
+  width:100%;
+
 }
 
-#main {
-  height: 100%;
-  width: 100%;
+
+
+#main{
+
+  height:100%;
+
+  width:100%;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
 }
 
-.card {
-  position: absolute;
+
+
+.card{
+
+  position:absolute;
+
   height: 300px;
+
   width: 230px;
+
   border: 1px solid salmon;
+
   border-radius: 20px;
-  display: flex;
+
+  display:flex;
+
   align-items: center;
+
   justify-content: center;
-  overflow: hidden; /* Fix: Keeps the image corners rounded inside the card */
-  transition: transform 0.3s ease, z-index 0s; /* Added smooth hover transition */
+
 }
 
-/* Base stack layout */
-#card1 { z-index: 4; }
-#card2 { z-index: 3; transform: rotate(-7deg); }
-#card3 { z-index: 2; transform: rotate(-14deg); }
-#card4 { z-index: 1; transform: rotate(-21deg); }
 
-/* Hover effects */
-.card:hover {
-  z-index: 10;
-  transform: rotate(0deg) scale(1.05); /* Straightens and slightly enlarges on hover */
-  cursor: pointer;
+
+#card1{
+
+  z-index:4;
+
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+
+
+#card2{
+
+  z-index:3;
+
+  rotate:-7deg;
+
 }
+
+
+
+#card2:hover{
+
+  z-index:10;
+
+}
+
+
+
+#card3{
+
+  z-index:2;
+
+  rotate:-14deg;
+
+}
+
+
+
+#card3:hover{
+
+  z-index:10;
+
+}
+
+
+
+#card4{
+
+  z-index:1;
+
+  rotate:-21deg;
+
+}
+
+
+
+#card4:hover{
+
+  z-index:10;
+
+}
+
+
+
+img{
+
+  height:100%;
+
+  width:100%;
+
+  object-fit:cover;
+
+} 
