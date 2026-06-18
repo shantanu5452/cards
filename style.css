@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #111; 
+  background-color: #111; /* Added dark background to make the cards pop */
 }
 
 #main {
@@ -27,10 +27,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; 
-  
-  /* FIX: Delays the z-index drop for 0.3s on mouse-leave so it stays on top while shrinking */
-  transition: transform 0.3s ease, z-index 0s linear 0.3s; 
+  overflow: hidden; /* Fix: Keeps the image corners rounded inside the card */
+  transition: transform 0.3s ease, z-index 0s; /* Added smooth hover transition */
 }
 
 /* Base stack layout */
@@ -42,11 +40,8 @@ html, body {
 /* Hover effects */
 .card:hover {
   z-index: 10;
-  transform: rotate(0deg) scale(1.05); 
+  transform: rotate(0deg) scale(1.05); /* Straightens and slightly enlarges on hover */
   cursor: pointer;
-  
-  /* FIX: Makes z-index instantly 10 the exact millisecond you hover */
-  transition: transform 0.3s ease, z-index 0s linear 0s;
 }
 
 img {
